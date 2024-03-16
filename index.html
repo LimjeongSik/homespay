@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <title>홈스페이(Homes Pay)</title>
+    </head>
+    <body>
+        <div class="__app">
+            <header class="header">
+                <div class="header_inner">
+                    <div class="logo">
+                        <a href="/">
+                            <img
+                                src="images/icons/icon_logo.png"
+                                alt="Homes Pay"
+                            />
+                        </a>
+                    </div>
+                    <button class="btn_menu">
+                        <span class="hide">메뉴</span>
+                        <img src="images/btns/btn_menu.png" alt="메뉴" />
+                    </button>
+                </div>
+            </header>
+            <main class="main">
+                <section>
+                    <!-- 계약 등록 전 -->
+                    <div class="registration not" style="display: none">
+                        <div class="registration_inner">
+                            <div class="registration_head">
+                                <h6>
+                                    결제 후 바로<br />
+                                    송금이 가능해요!
+                                </h6>
+                                <div class="state not_registration">미등록</div>
+                            </div>
+                            <div class="registration_body">
+                                <img
+                                    src="images/bg/bg_not_registered.png"
+                                    alt="계좌를 등록해주세요."
+                                />
+                                <button class="btn_contract_registration">
+                                    계약 등록하기
+                                </button>
+                            </div>
+                        </div>
+                        <div class="registration_footer">
+                            <img
+                                src="images/icons/icon_dollar.png"
+                                alt="오늘 결제 시 03.08(금) 12시 송금이 기본이나,
+                            결제 후 바로 번개송금/예약송금 가능합니다."
+                            />
+                            <span>
+                                오늘 결제 시 <span>03.08(금) 12시</span> 송금이
+                                기본이나,<br />결제 후 바로 번개송금/예약송금
+                                가능합니다.
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 계약 등록 검토중 -->
+                    <div class="registration goover" style="display: none">
+                        <div class="registration_inner">
+                            <div class="registration_head">
+                                <h6>서류검토중입니다 기다려주십시오.</h6>
+                                <div class="state goover">서류검토중</div>
+                            </div>
+                            <div class="registration_body">
+                                <div class="homes_pay">
+                                    <strong>홈스페이</strong>
+                                    <img
+                                        src="images/icons/icon_right_arrow.png"
+                                        alt="더보기"
+                                    />
+                                </div>
+                                <div class="options_button">
+                                    <button disabled>결제하기</button>
+                                    <button disabled>송금하기/결제관리</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration_footer_wrap">
+                            <button class="btn_contract_registration">
+                                계약 등록하기
+                            </button>
+                            <div class="registration_footer">
+                                <img
+                                    src="images/icons/icon_dollar.png"
+                                    alt="오늘 결제 시 03.08(금) 12시 송금이 기본이나,
+                            결제 후 바로 번개송금/예약송금 가능합니다."
+                                />
+                                <span>
+                                    오늘 결제 시
+                                    <span>03.08(금) 12시</span> 송금이
+                                    기본이나,<br />결제 후 바로
+                                    번개송금/예약송금 가능합니다.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 계약 등록 완료 -->
+                    <div class="registration payment_possible">
+                        <div class="registration_inner">
+                            <div class="registration_head">
+                                <h6>지금 바로 결제 가능합니다.</h6>
+                                <div class="state payment_possible">
+                                    결제가능
+                                </div>
+                            </div>
+                            <div class="registration_body">
+                                <div class="homes_pay">
+                                    <strong>홈스페이</strong>
+                                    <img
+                                        src="images/icons/icon_right_arrow.png"
+                                        alt="더보기"
+                                    />
+                                </div>
+                                <div class="options_button">
+                                    <button class="btn_payment">
+                                        결제하기
+                                    </button>
+                                    <button class="btn_wiretransfer_management">
+                                        송금하기/결제관리
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration_footer_wrap">
+                            <button class="btn_contract_registration">
+                                계약 등록하기
+                            </button>
+                            <div class="registration_footer">
+                                <img
+                                    src="images/icons/icon_dollar.png"
+                                    alt="오늘 결제 시 03.08(금) 12시 송금이 기본이나,
+                            결제 후 바로 번개송금/예약송금 가능합니다."
+                                />
+                                <span>
+                                    오늘 결제 시
+                                    <span>03.08(금) 12시</span> 송금이
+                                    기본이나,<br />결제 후 바로
+                                    번개송금/예약송금 가능합니다.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="pay_life">
+                        <h3>슬기로운 페이생활</h3>
+                        <ul>
+                            <li>
+                                <div class="info">
+                                    <img
+                                        src="images/icons/icon_card.png"
+                                        alt="카드사별 무이자 행사보기"
+                                    />
+                                    <div class="info_txt">
+                                        <span
+                                            >무이자 조건을 꼭 확인해보세요</span
+                                        >
+                                        <h6>카드사별 무이자 행사보기</h6>
+                                    </div>
+                                </div>
+                                <img
+                                    src="images/icons/icon_right.png"
+                                    alt="더보기"
+                                />
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <img
+                                        src="images/icons/icon_wiretransfer.png"
+                                        alt="추가비용 없는 번개송금/예약송금 안내"
+                                    />
+                                    <div class="info_txt">
+                                        <span
+                                            >결제 후 즉시 송금하거나 예약송금이
+                                            가능해요</span
+                                        >
+                                        <h6>
+                                            추가비용 없는 번개송금/예약송금 안내
+                                        </h6>
+                                    </div>
+                                </div>
+                                <img
+                                    src="images/icons/icon_right.png"
+                                    alt="더보기"
+                                />
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <img
+                                        src="images/icons/icon_card_check.png"
+                                        alt="카드주 간단 확인절차 안내"
+                                    />
+                                    <div class="info_txt">
+                                        <span
+                                            >카드정보 입력방식의 고액결제 시
+                                            요청드립니다</span
+                                        >
+                                        <h6>카드주 간단 확인절차 안내</h6>
+                                    </div>
+                                </div>
+                                <img
+                                    src="images/icons/icon_right.png"
+                                    alt="더보기"
+                                />
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <img
+                                        src="images/icons/icon_deduct.png"
+                                        alt="연말정산 카드공제, 월세공제 안내"
+                                    />
+                                    <div class="info_txt">
+                                        <span
+                                            >카드소득공제 or 월세세액공제
+                                            됩니다</span
+                                        >
+                                        <h6>
+                                            연말정산 카드공제, 월세공제 안내
+                                        </h6>
+                                    </div>
+                                </div>
+                                <img
+                                    src="images/icons/icon_right.png"
+                                    alt="더보기"
+                                />
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <img
+                                        src="images/icons/icon_tax.png"
+                                        alt="부가세/종소세 처리법, 계산서 안내"
+                                    />
+                                    <div class="info_txt">
+                                        <span
+                                            >세무상 유의사항을 꼭
+                                            확인해보세요</span
+                                        >
+                                        <h6>
+                                            부가세/종소세 처리법, 계산서 안내
+                                        </h6>
+                                    </div>
+                                </div>
+                                <img
+                                    src="images/icons/icon_right.png"
+                                    alt="더보기"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <div class="toggle_menu">
+            <div class="content">
+                <div class="menu_head">
+                    <div class="close_wrap">
+                        <button class="btn_toggle_close">
+                            <span class="hide">메뉴닫기</span>
+                            <img
+                                src="images/btns/btn_close.png"
+                                alt="메뉴 닫기"
+                            />
+                        </button>
+                    </div>
+                    <div class="menu_head_inner">
+                        <h6>
+                            홈스페이님<br />
+                            반갑습니다!
+                        </h6>
+                        <button>
+                            <span>내 정보</span>
+                            <img
+                                src="images/icons/icon_white_right.png"
+                                alt="내 정보 더보기"
+                            />
+                        </button>
+                    </div>
+                    <div class="menu_body">
+                        <div class="menu_body_inner">
+                            <strong>고객센터</strong>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span>자주묻는 질문</span>
+                                        <img
+                                            src="images/icons/icon_right_arrow.png"
+                                            alt="자주묻는 질문"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>공지사항</span>
+                                        <img
+                                            src="images/icons/icon_right_arrow.png"
+                                            alt="공지사항"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>고객센터 문의하기</span>
+                                        <img
+                                            src="images/icons/icon_right_arrow.png"
+                                            alt="고객센터 문의하기"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_body_inner">
+                            <strong>개인/보안</strong>
+                            <ul>
+                                <li>
+                                    <a href="userprofile.html">
+                                        <span>회원정보 변경</span>
+                                        <img
+                                            src="images/icons/icon_right_arrow.png"
+                                            alt="회원정보 변경"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="newpassword.html">
+                                        <span>비밀번호 변경</span>
+                                        <img
+                                            src="images/icons/icon_right_arrow.png"
+                                            alt="비밀번호 변경"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>서비스 이용약관</span>
+                                        <img
+                                            src="images/icons/icon_right_arrow.png"
+                                            alt="서비스 이용약관"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>개인정보 처리방침</span>
+                                        <img
+                                            src="images/icons/icon_right_arrow.png"
+                                            alt="개인정보 처리방침"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="withdrawal.html">
+                                        <span>회원탈퇴</span>
+                                        <img
+                                            src="images/icons/icon_right_arrow.png"
+                                            alt="회원탈퇴"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_footer">
+                        <button>로그아웃</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/common.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+.__app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.splash {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.splash .logo {
+    display: block;
+    width: 5.85rem;
+    height: 1.3rem;
+}
+.splash .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    grid-gap: 0.6rem;
+    margin: 0.8rem 0 1.9rem;
+    text-align: center;
+}
+.splash .text h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--black);
+}
+.splash .text p {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--gray-999);
+}
+.splash .bg {
+    display: block;
+    max-width: 100%;
+    width: 48.584vh;
+    height: auto;
+}
+.splash button {
+    width: 7.5rem;
+    height: 2.8rem;
+    border-radius: 0.6rem;
+    border: none;
+    background: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: -0.0125rem;
+    color: var(--white);
+}

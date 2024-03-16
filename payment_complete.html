@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/payment_complete.css" />
+        <title>홈스페이 - 결제완료</title>
+    </head>
+    <body>
+        <div class="__app">
+            <div class="head">
+                <button class="btn_close">
+                    <span class="hide">닫기</span>
+                    <img src="images/btns/btn_close.png" alt="닫기" />
+                </button>
+            </div>
+            <main class="main">
+                <div class="complete">
+                    <div class="complete_inner">
+                        <div class="complete_innter_head">
+                            <img src="images/icons/icon_check.png" alt="" />
+                            <h6>결제가 완료되었습니다.</h6>
+                            <p>송금하러 갈까요?</p>
+                        </div>
+                    </div>
+                    <div class="complete_inner_info">
+                        <ul>
+                            <li>
+                                <strong>결제금액</strong>
+                                <span class="primary">104,400원</span>
+                            </li>
+                            <li>
+                                <strong>송금 예정액</strong>
+                                <span>100,000원</span>
+                            </li>
+                            <li>
+                                <strong>입금계좌</strong>
+                                <span>홈스페이 계좌</span>
+                            </li>
+                            <li>
+                                <strong>송금상태</strong>
+                                <span class="primary bold">송금대기</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="complete_buttons">
+                        <button class="btn_later">나중에 하기</button>
+                        <button class="btn_wiretransfer">송금하러 가기</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="js/paymentComplete.js"></script>
+    </body>
+</html>

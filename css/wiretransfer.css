@@ -1,0 +1,132 @@
+.__app {
+    padding-top: 2.7rem;
+}
+.main {
+    padding-bottom: 1.9rem;
+}
+.wire_transfer {
+    width: 100%;
+    height: calc(100vh - 4.6rem);
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+.wire_transfer_inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wire_transfer_inner_head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wire_transfer_inner_head h6 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.33;
+    letter-spacing: -0.0185rem;
+    color: var(--black);
+    text-align: center;
+}
+.wire_transfer_inner_head .price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    grid-gap: 0.2rem;
+    margin: 0.5rem 0 1.2rem;
+    text-align: center;
+}
+.wire_transfer_inner_head .price span {
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: -0.0155rem;
+    line-height: 1.5;
+    color: var(--primary);
+}
+.wire_transfer_inner_head .price p {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: -0.011rem;
+    color: var(--gray-b1b3b3);
+}
+.wire_transfer_inner_head .btn_payment_cancel {
+    width: 3.4rem;
+    height: 1.6rem;
+    border-radius: 0.8rem;
+    border: 1px solid var(--line-dadada);
+    background: var(--white);
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: var(--black);
+}
+.wire_transfer_footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn_view_receipt {
+    border: none;
+    background: none;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: -0.01rem;
+    color: var(--gray-999);
+    text-decoration: underline;
+}
+.wire_transfer_footer .text_bx {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: calc(83 / 320 * 100%);
+    background: url("../images/bg/bg_down_textbox.png") no-repeat center / cover;
+    margin: 1.2rem 0 0.4rem;
+}
+.wire_transfer_footer .text_bx strong {
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 0.65rem;
+    font-weight: 500;
+    line-height: 1.38;
+    letter-spacing: -0.01rem;
+    color: var(--gray-666);
+    text-align: center;
+}
+.wire_transfer_footer .text_bx strong span {
+    font-weight: 900;
+    color: var(--primary);
+}
+
+.wire_transfer_buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    grid-gap: 0.3rem;
+}
+.wire_transfer_buttons button {
+    height: 2.6rem;
+    border-radius: 0.6rem;
+    font-size: 0.7rem;
+    letter-spacing: -0.011rem;
+    border: none;
+}
+.wire_transfer_buttons button.btn_reservation {
+    flex: 0.35;
+    color: var(--white);
+    font-weight: 800;
+    background: var(--black-333);
+}
+.wire_transfer_buttons button.btn_wiretransfer {
+    flex: 0.65;
+    color: var(--white);
+    font-weight: 900;
+    background: var(--primary);
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/contract.css" />
+        <title>홈스페이 - 계약 등록하기</title>
+    </head>
+    <body>
+        <div class="__app">
+            <header class="header">
+                <div class="header_inner">
+                    <button class="btn_prev">
+                        <span class="hide">뒤로가기</span>
+                        <img src="images/btns/btn_prev.png" alt="뒤로가기" />
+                    </button>
+                    <h1>계약 등록하기</h1>
+                </div>
+            </header>
+            <main class="main">
+                <div class="contract_form">
+                    <fieldset>
+                        <label for="user_address">주소정보</label>
+                        <div class="confirm_bx">
+                            <input
+                                type="text"
+                                id="user_address"
+                                placeholder="자택/사업장 주소 또는 거래처 주소"
+                            />
+                            <button type="button">검색</button>
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="상세주소 또는 거래처명/상품명"
+                            id="user_detail_address"
+                        />
+                    </fieldset>
+                    <fieldset>
+                        <label for="relative_account">거래상대 계좌정보</label>
+                        <div class="confirm_bx">
+                            <input
+                                type="text"
+                                id="relative_account"
+                                placeholder="임대인 또는 거래 상대방 수납계좌"
+                            />
+                            <button type="button" class="long">계좌인증</button>
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="은행이름"
+                            id="bank_name"
+                        />
+                        <input
+                            type="text"
+                            placeholder="계좌번호"
+                            id="account_number"
+                        />
+                    </fieldset>
+                    <fieldset>
+                        <label for="name_of_remitter">송금자명 설정</label>
+                        <input
+                            type="text"
+                            placeholder="거래상대 계좌에 찍힐 이름 (예 : 101호)"
+                            id="name_of_remitter"
+                        />
+                    </fieldset>
+                    <fieldset>
+                        <strong>확인서류</strong>
+                        <div class="confirm_bx">
+                            <input type="file" id="contract_document" />
+                            <label for="contract_document"
+                                >계약서 또는 고지서/계산서/명세서</label
+                            >
+                            <button type="button">등록</button>
+                        </div>
+                        <div class="confirm_bx">
+                            <input type="file" id="add_contract_document" />
+                            <label for="add_contract_document">추가서류</label>
+                            <button type="button">등록</button>
+                        </div>
+                    </fieldset>
+                    <button class="btn_registration" type="button">
+                        등록하기
+                    </button>
+                </div>
+            </main>
+        </div>
+
+        <script src="js/common.js"></script>
+    </body>
+</html>

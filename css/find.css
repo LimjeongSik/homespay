@@ -1,0 +1,91 @@
+.__app {
+    padding-top: 2.7rem;
+}
+.find_form {
+    width: 100%;
+    height: calc(100vh - 5.25rem);
+    display: flex;
+    flex-direction: column;
+    padding: 1.7rem 1rem 1.5rem;
+}
+.find_form .find_form_inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    gap: 1.8rem;
+    grid-gap: 1.8rem;
+}
+.find_form .find_form_inner fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    grid-gap: 0.3rem;
+}
+.find_form .find_form_inner fieldset > label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: -0.011rem;
+    line-height: 1.3;
+    color: var(--black);
+}
+.find_form .find_form_inner fieldset input {
+    width: 100%;
+    height: 2.4rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--line-e7e7e7);
+    padding: 0 0.7rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: -0.011rem;
+    color: var(--black);
+    outline: none;
+}
+.find_form .find_form_inner fieldset input::placeholder {
+    color: var(--gray-b1b3b3);
+}
+.find_form .find_form_inner fieldset input:read-only {
+    background: var(--white-f7f7f7);
+    color: var(--primary);
+    font-weight: 600;
+}
+.find_form .find_form_inner fieldset .confirm_bx button {
+    min-width: 3.2rem;
+    height: 2.4rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--primary-ebefff);
+    background: var(--primary-ebefff);
+    font-size: 0.65rem;
+    font-weight: 900;
+    letter-spacing: -0.01rem;
+    color: var(--primary);
+}
+.find_form .find_form_inner fieldset .confirm_bx {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    grid-gap: 0.3rem;
+}
+.find_form .find_form_inner fieldset .input_bx {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.find_form .find_form_inner .user_find_id,
+.find_form .find_form_inner .user_find_password_id,
+.find_form .find_form_inner .user_find_password_change {
+    display: none;
+}
+.btn_confirm {
+    width: 100%;
+    height: 2.8rem;
+    border-radius: 0.6rem;
+    border: none;
+    background: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: -0.0125rem;
+    color: var(--white);
+}

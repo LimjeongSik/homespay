@@ -1,0 +1,244 @@
+.__app {
+    padding-top: 2.7rem;
+}
+.main {
+    padding: 0.625rem 1rem 1.8rem;
+}
+.registration_inner {
+    padding: 1rem 1.2rem 1.4rem;
+    border-radius: 1.2rem;
+    background: var(--white);
+    box-shadow: 0px 0.25rem 1.2rem rgba(0, 0, 0, 0.12);
+}
+.registration_head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.registration_head > h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.0155rem;
+    color: var(--black);
+}
+.registration_head > .state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.4rem;
+    font-size: 0.55rem;
+    line-height: 1.5;
+    font-weight: 800;
+}
+.registration_head > .state.not_registration {
+    background: var(--primary-ebefff);
+    color: var(--primary);
+}
+.registration_head > .state.goover {
+    background: var(--orange-fef3de);
+    color: var(--orange);
+}
+.registration_head > .state.payment_possible {
+    background: var(--green-ddf3ed);
+    color: var(--green);
+}
+.registration_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1rem;
+    grid-gap: 1.1rem;
+    margin-top: 0.9rem;
+}
+.registration_body > img {
+    display: block;
+    width: 4.6rem;
+    height: 5.01rem;
+}
+.registration_body .options_button button:disabled {
+    color: var(--gray-cacaca);
+}
+.registration_body .options_button button {
+    flex: 1;
+    height: 2.5rem;
+    background: var(--white);
+    border: none;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--black);
+}
+.registration_body > .btn_contract_registration {
+    width: 100%;
+    height: 2.4rem;
+    border-radius: 0.6rem;
+    border: none;
+    background: var(--primary);
+    box-shadow: 0px 0.2rem 0.5rem var(--primary-shadow);
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--white);
+}
+.registration_footer {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    grid-gap: 0.6rem;
+    padding: 1rem 0.8rem 1rem;
+    background: var(--white-f8f9fc);
+    border: 1px solid var(--line-edeff3);
+    border-radius: 0.8rem;
+    margin-top: 0.7rem;
+}
+.registration_footer img {
+    display: block;
+    width: 1.7rem;
+    height: 1.5rem;
+}
+.registration_footer span {
+    font-size: 0.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--gray-666);
+}
+.registration_footer span span {
+    color: var(--primary);
+    font-weight: 800;
+}
+.registration.goover .btn_contract_registration,
+.registration.payment_possible .btn_contract_registration {
+    width: 100%;
+    height: 2.4rem;
+    border-radius: 0.6rem;
+    border: none;
+    background: var(--primary);
+    box-shadow: 0px 0.2rem 0.5rem var(--primary-shadow);
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--white);
+}
+.registration.goover .registration_inner,
+.registration.payment_possible .registration_inner {
+    padding: 1rem 0 0;
+}
+.registration.goover .registration_head,
+.registration.payment_possible .registration_head {
+    align-items: center;
+    padding: 0 1.2rem;
+}
+.registration.goover .registration_head > h6,
+.registration.payment_possible .registration_head > h6 {
+    font-size: 0.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--gray-999);
+}
+.registration.goover .registration_body,
+.registration.payment_possible .registration_body {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    gap: 1.25rem;
+    grid-gap: 1.25rem;
+}
+.registration.goover .registration_body > .homes_pay,
+.registration.payment_possible .registration_body > .homes_pay {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+    padding: 0 1.2rem;
+}
+.registration.goover .registration_body > .homes_pay > img,
+.registration.payment_possible .registration_body > .homes_pay > img {
+    display: block;
+    width: 0.4rem;
+    height: 0.7rem;
+}
+.registration.goover .registration_body .options_button,
+.registration.payment_possible .registration_body .options_button {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 1.2rem 1.2rem;
+    overflow: hidden;
+    border-top: 1px solid var(--line-efefef);
+}
+.registration.goover .registration_body .options_button::before,
+.registration.payment_possible .registration_body .options_button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1px;
+    height: 100%;
+    background: var(--line-efefef);
+    z-index: 1;
+}
+.registration.goover .registration_footer_wrap,
+.registration.payment_possible .registration_footer_wrap {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--line-efefef);
+}
+.registration.goover .registration_footer_wrap .registration_footer,
+.registration.payment_possible .registration_footer_wrap .registration_footer {
+    margin-top: 0.6rem;
+}
+
+.pay_life {
+    margin-top: 2rem;
+}
+.pay_life > h3 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: -0.0125rem;
+    color: var(--black);
+}
+.pay_life ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem 0;
+}
+.pay_life ul li:not(:last-child) {
+    border-bottom: 1px solid var(--line-f4f4f4);
+}
+.pay_life ul li .info {
+    display: flex;
+    align-content: center;
+    gap: 0.7rem;
+    grid-gap: 0.7rem;
+}
+.pay_life ul li .info > img {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+.pay_life ul li .info .info_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.pay_life ul li .info .info_txt span {
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: -0.0045rem;
+    color: var(--gray-999);
+}
+.pay_life ul li .info .info_txt h6 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: -0.0125rem;
+    color: var(--black);
+}
+.pay_life ul li img {
+    display: block;
+    width: 0.4rem;
+    height: 0.7rem;
+}

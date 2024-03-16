@@ -1,0 +1,190 @@
+.__app {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem 1.2rem;
+}
+.main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main > h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--black);
+    text-align: center;
+}
+.main .login_form {
+    width: 100%;
+    margin-top: 1.6rem;
+}
+.main .login_form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    grid-gap: 0.35rem;
+}
+.main .login_form fieldset label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: -0.011rem;
+    color: var(--black);
+}
+.main .login_form .input_bx {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    grid-gap: 0.9rem;
+}
+.main .login_form .input_bx fieldset input {
+    width: 100%;
+    height: 2.4rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--line-e7e7e7);
+    padding: 0 0.7rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: -0.011rem;
+    color: var(--black);
+    outline: none;
+}
+.main .login_form .input_bx fieldset input::placeholder {
+    color: var(--gray-b1b3b3);
+}
+.main .login_form .input_bx fieldset input:focus {
+    border-color: var(--primary);
+}
+.main .login_form fieldset .error {
+    display: none;
+    font-size: 0.55rem;
+    font-weight: 500;
+    letter-spacing: -0.0095rem;
+    color: var(--error);
+}
+.main .login_form fieldset.error .error {
+    display: block;
+}
+.main .login_form fieldset.error input {
+    border: 1px solid var(--error);
+}
+.main .login_form .login_option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.7rem;
+}
+.main .login_form .login_option .save_id input[type="checkbox"] {
+    display: none;
+}
+.main .login_form .login_option .save_id label {
+    display: flex;
+    align-items: center;
+    height: 1rem;
+    text-indent: 1.3rem;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    background-image: url("../images/btns/btn_checked_off.png");
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: -0.011rem;
+    color: var(--gray-666);
+}
+.main
+    .login_form
+    .login_option
+    .save_id
+    input[type="checkbox"]:checked
+    + label {
+    background-image: url("../images/btns/btn_checked_on.png");
+}
+.main .login_form .login_option .find {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    grid-gap: 0.85rem;
+}
+.main .login_form .login_option .find a {
+    position: relative;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: -0.011rem;
+    color: var(--gray-666);
+    text-decoration: none;
+}
+.main .login_form .login_option .find a:first-child::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -0.45rem;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 0.45rem;
+    background-color: var(--gray-999);
+}
+.main .login_form .button_bx {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    grid-gap: 0.7rem;
+    margin-top: 1.6rem;
+}
+.main .login_form .button_bx button {
+    width: 100%;
+    height: 2.8rem;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: -0.0125rem;
+    cursor: pointer;
+}
+.main .login_form .button_bx button.btn_login {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 0.6rem;
+}
+.main .login_form .button_bx button.btn_register {
+    background-color: var(--white);
+    color: var(--primary);
+    border-radius: 1.4rem;
+    border: 1px solid var(--primary);
+}
+.main .login_form .sns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    grid-gap: 1.25rem;
+    margin-top: 1.9rem;
+    margin-bottom: 4rem;
+}
+.main .login_form .sns .sns_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    grid-gap: 0.3rem;
+}
+.main .login_form .sns .sns_login img {
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.main .login_form .sns .sns_login span {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: -0.01rem;
+    color: var(--gray-b1b3b3);
+}
+.copy {
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: -0.0095rem;
+    color: var(--gray-d1d1d1);
+}

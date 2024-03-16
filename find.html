@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/swiper.bundle.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/find.css" />
+        <title>홈스페이 - 계정찾기</title>
+    </head>
+    <body>
+        <div class="__app">
+            <header class="header">
+                <div class="header_inner">
+                    <button class="btn_prev">
+                        <span class="hide">뒤로가기</span>
+                        <img src="images/btns/btn_prev.png" alt="뒤로가기" />
+                    </button>
+                    <h1>계정찾기</h1>
+                </div>
+            </header>
+            <main class="main">
+                <div class="swiper_tabs">
+                    <button type="button" class="active">아이디 찾기</button>
+                    <button type="button">비밀번호 찾기</button>
+                </div>
+                <div class="find_swiper">
+                    <div class="swiper findSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="find_form">
+                                    <div class="find_form_inner find_id">
+                                        <fieldset>
+                                            <label for="find_id_phone_number"
+                                                >휴대폰 번호</label
+                                            >
+                                            <div class="confirm_bx">
+                                                <input
+                                                    type="text"
+                                                    id="find_id_phone_number"
+                                                    placeholder="-없이 숫자만 입력"
+                                                />
+                                                <button type="button">
+                                                    인증
+                                                </button>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="user_find_id">
+                                            <label for="find_id_user_id"
+                                                >아이디</label
+                                            >
+                                            <input
+                                                type="text"
+                                                value="whh5080"
+                                                id="find_id_user_id"
+                                                readonly
+                                            />
+                                        </fieldset>
+                                    </div>
+                                    <button class="btn_confirm">확인</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="find_form">
+                                    <div class="find_form_inner find_password">
+                                        <fieldset>
+                                            <label
+                                                for="find_password_phone_number"
+                                                >휴대폰 번호</label
+                                            >
+                                            <div class="confirm_bx">
+                                                <input
+                                                    type="text"
+                                                    id="find_password_phone_number"
+                                                    placeholder="-없이 숫자만 입력"
+                                                />
+                                                <button type="button">
+                                                    인증
+                                                </button>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="user_find_password_id">
+                                            <label for="find_password_user_id"
+                                                >아이디</label
+                                            >
+                                            <input
+                                                type="text"
+                                                value="whh5080"
+                                                id="find_password_user_id"
+                                                readonly
+                                            />
+                                        </fieldset>
+                                        <fieldset
+                                            class="user_find_password_change"
+                                        >
+                                            <label for="user_password"
+                                                >비밀번호 변경</label
+                                            >
+                                            <div class="input_bx">
+                                                <input
+                                                    type="password"
+                                                    id="user_password"
+                                                    placeholder="영문과 숫자 8자리 이상"
+                                                />
+                                                <input
+                                                    type="password"
+                                                    id="user_password_confirm"
+                                                    placeholder="비밀번호 확인"
+                                                />
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <button class="btn_confirm">
+                                        변경하기
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="js/swiper.bundle.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/find.js"></script>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/payment.css" />
+        <title>홈스페이 - 결제하기</title>
+    </head>
+    <body>
+        <div class="__app">
+            <header class="header">
+                <div class="header_inner">
+                    <button class="btn_prev">
+                        <span class="hide">뒤로가기</span>
+                        <img src="images/btns/btn_prev.png" alt="뒤로가기" />
+                    </button>
+                    <h1>결제하기</h1>
+                </div>
+            </header>
+            <main class="main">
+                <section>
+                    <div class="inner">
+                        <div class="payment_head">
+                            <h3>결제 상품명</h3>
+                            <span>홈스페이 월세</span>
+                        </div>
+                        <div class="payment_body">
+                            <div class="price">
+                                <h3>송금할 금액</h3>
+                                <input
+                                    type="text"
+                                    placeholder="송금할 금액을 입력해주세요."
+                                    id="price"
+                                />
+                                <div class="text_bx">
+                                    <strong>
+                                        <span class="total_price">0원</span>
+                                        결제 후<br />
+                                        <span class="actual_price">0원</span>을
+                                        송금합니다.
+                                    </strong>
+                                </div>
+                                <p>
+                                    (서비스 이용료 : 4,400원 / 부가세 포함
+                                    송금액의 4.4%)
+                                </p>
+                            </div>
+                            <div class="name">
+                                <h3>송금자 명</h3>
+                                <input
+                                    type="text"
+                                    placeholder="송금자 명을 입력해주세요."
+                                    id="wire_transfer_name"
+                                />
+                            </div>
+                            <div class="agreement">
+                                <h3>이용동의</h3>
+                                <div class="agreement_inner">
+                                    <div class="agreement_bx">
+                                        <input
+                                            type="checkbox"
+                                            id="agreement_chk"
+                                        />
+                                        <label for="agreement_chk">
+                                            <span>[필수]</span>서비스 이용 필수
+                                            동의사항</label
+                                        >
+                                    </div>
+                                    <button type="button" class="btn_more">
+                                        <span class="hide">약관 더보기</span>
+                                        <img
+                                            src="images/icons/icon_right.png"
+                                            alt="약관 더보기"
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment_footer">
+                        <div class="payment_buttons">
+                            <button class="btn_payment_request">
+                                결제요청
+                            </button>
+                            <button class="btn_payment">결제하기</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="js/common.js"></script>
+        <script src="js/payment.js"></script>
+    </body>
+</html>
